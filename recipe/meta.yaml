@@ -1,5 +1,5 @@
 {% set name = "edfio" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/edfio-{{ version }}.tar.gz
-  sha256: 7ca5af5f7b693eed3545cbc013d1ab32446162d203b2d1302965a4df45c2ef08
+  sha256: 92b5919d5c9bb9cc8555da8c390f72fc5475ef0fc9007158fd7dffdb1257b0f7
 
 build:
   noarch: python
