@@ -1,5 +1,5 @@
 {% set name = "edfio" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/edfio-{{ version }}.tar.gz
-  sha256: 0e18a284d3e9775d89a4e421992cd38b4370a43cb3c93333a10c9b0555f52d96
+  sha256: b4d8e276899c578cc585126f1c2e130f708eeeb61d9bcd760d6f4c91b87f9423
 
 build:
   noarch: python
@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.9,<3.13
-    - poetry-core >=1.0.0
-    - poetry-dynamic-versioning >=1.0.0,<2.0.0
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >=3.9.0,<4.0.0,<3.13
