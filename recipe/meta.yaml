@@ -29,10 +29,10 @@ test:
     - edfio
   commands:
     - pip check
+    - python -c "import edfio; assert edfio.__version__ == '{{ version }}', edfio.__version__"
   requires:
     - python {{ python_min }}
     - pip
-    - python -c "import edfio; assert edfio.__version__ == '{{ version }}', edfio.__version__"
 
 about:
   home: https://github.com/the-siesta-group/edfio
